@@ -1,0 +1,73 @@
+header{
+    background-color: #0081bd;
+    height: auto;
+    width: 100vw;
+    padding: 10px 20px;
+    align-items: center;
+}
+.top_{
+    height: 80%;
+    display: grid;
+    grid-template-areas: "Grupo_A logo_principal Grupo_B";
+    grid-template-columns: 45% 10% 45%;
+
+}
+.logo_principal{
+    grid-area: logo_principal;
+    height: 60px;
+    width: auto;
+}
+.grupo_A img{
+    grid-area: Grupo_A;
+    height: 40px;
+    width: auto;
+}
+.grupo_B img{
+    grid-area: Grupo_B;
+    height: 40px;
+    width: auto;
+}
+/*barra de navegacion */
+.barra_de_navegacion {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 5px 10px;
+    height: auto; 
+    gap: 10px; 
+}
+.elementos-barra {
+    display: flex;
+    align-items: center; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+.busqueda {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+/*diseño de los botones (especificar botones luego) */
+.boton {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color:black;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;  /*se agrande un pocp al pasar el mouse*/
+}
+.boton:hover{
+    background-color:  #00567e;
+    transform: scale(1.05);    
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+.boton:active{
+    background-color: aliceblue;
+    transform: scale(0.98);
+}
