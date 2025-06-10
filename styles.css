@@ -1,5 +1,4 @@
 header{
-    background-color: #0081bd;
     height: auto;
     width: 100vw;
     padding: 10px 20px;
@@ -10,7 +9,7 @@ header{
     display: grid;
     grid-template-areas: "Grupo_A logo_principal Grupo_B";
     grid-template-columns: 45% 10% 45%;
-
+    background-color: #0081bd;
 }
 .logo_principal{
     grid-area: logo_principal;
@@ -32,6 +31,7 @@ header{
     display: flex;
     justify-content: center; 
     align-items: center; 
+    background: linear-gradient(to bottom,#0081bd 50%, #00567e  50%); /*Esta funcion la sque de internet, sino tenia que agregar dos div al html*/
     padding: 5px 10px;
     height: auto; 
     gap: 10px; 
@@ -39,9 +39,11 @@ header{
 .elementos-barra {
     display: flex;
     align-items: center; 
+    background: linear-gradient(to bottom,#0081bd 50%, #00567e  50%);
     list-style: none;
     padding: 0;
     margin: 0;
+    border-radius: 8px;
     gap: 10px;
 }
 .busqueda {
@@ -56,6 +58,7 @@ header{
     margin: 0;
     padding: 10px 20px;
     text-decoration: none;
+    background-color: #0081bd;
     color:black;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
