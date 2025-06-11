@@ -72,3 +72,26 @@ header{
     transform: scale(0.98);
 } */ 
 
+
+/*Body; Encabezado; Noricias; Login; Tabla de posiciones*/
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas: 
+    "encabezado encabezado encabezado"
+    "noticia noticia login"
+    "noticia noticia pos";
+}
+.encabezado{
+    grid-area: encabezado;
+}
+.noticias-main{
+    grid-area: noticia;
+}
+.posiciones-main{
+    grid-area: pos;         /*DAle efecto a cada div, puede que tengas que cambiar algun div por a*/
+}
+.login-main{
+    grid-area: login;
+}
