@@ -1,0 +1,60 @@
+.calendario {
+  font-family: $font-main;
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+
+  .partido {
+    background-color: $white;
+    border-radius: 12px;
+    padding: 15px;
+    @include box-shadow;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    transition: $transition-default;
+
+    &:hover {
+      @include hover-scale();
+      background-color: rgba(255, 255, 255, 0.95);
+    }
+
+    .equipo_local,
+    .equipo_visitante {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 5px;
+      }
+    }
+
+    .datos {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 10px;
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .partido {
+      grid-template-columns: 1fr;
+    }
+
+    .datos {
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+}

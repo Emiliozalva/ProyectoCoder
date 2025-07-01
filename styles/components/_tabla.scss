@@ -1,0 +1,57 @@
+.tabla_posiciones {
+  font-family: $font-main;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+
+  .info {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    background-color: $primary-color;
+    color: $white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: start;
+    font-weight: bold;
+  }
+
+  .equipo {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+    background-color: $white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: $transition-fast;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      @include hover-scale();
+      background-color: rgba(0, 0, 0, 0.03);
+    }
+
+    .equipo_escudo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .info, .equipo {
+      grid-template-columns: 1fr;
+      text-align: left;
+    }
+  }
+}
