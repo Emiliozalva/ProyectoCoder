@@ -34,25 +34,26 @@ header {
     }
   }
 
-  .logo_principal {
-    grid-area: logo_principal;
-    height: min(5vw, 60px);
-    width: auto;
+.grupo_A img,
+.grupo_B img {
+  height: min(5vw, 40px);
+  width: auto;
+  transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55); // Transición suave y notoria
+}
 
-    &:hover {
-      @include hover-scale(1.5);
-      cursor: pointer;
-    }
-  }
+.logo_equipo:hover {
+  @include hover-scale(1.5);
+  cursor: pointer;
+}
 
-  .logo_equipo:hover {
+.logo_principal {
+  grid-area: logo_principal;
+  height: min(5vw, 60px);
+  width: auto;
+  transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55); // Igual que arriba
+
+  &:hover {
     @include hover-scale(1.5);
     cursor: pointer;
   }
-
-  .grupo_A img,
-  .grupo_B img {
-    height: min(5vw, 40px);
-    width: auto;
-  }
-}
+}}
