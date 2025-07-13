@@ -57,4 +57,16 @@
       gap: 5px;
     }
   }
+  @media (max-width: $breakpoint-sm) {
+  .fixture {
+    padding: 10px;
+    font-size: 0.9rem;
+
+    .partido {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+}
 }

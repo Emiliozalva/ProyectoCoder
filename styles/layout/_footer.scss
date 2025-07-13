@@ -5,4 +5,11 @@
   text-align: start;
   font-family: $font-main;
   text-decoration: none;
+  @media (max-width: $breakpoint-sm) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
 }

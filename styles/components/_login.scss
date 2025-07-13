@@ -67,3 +67,14 @@
     font-weight: 600;
   }
 }
+@media (max-width: $breakpoint-sm) {
+  .formulario_login {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .formulario_login input,
+  .formulario_login button {
+    font-size: 1rem;
+  }
+}

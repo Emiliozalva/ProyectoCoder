@@ -14,25 +14,20 @@ header {
     background-color: $primary-color;
     padding: 10px;
 
-    @media (max-width: 768px) {
-      grid-template-areas:
-        "logo_principal"
-        "Grupo_A"
-        "Grupo_B";
-      grid-template-columns: 1fr;
-      justify-items: center;
-      row-gap: 10px;
+@media (max-width: $breakpoint-sm) {
+  header .top_ {
+    padding: 5px;
 
-      .grupo_A img,
-      .grupo_B img {
-        height: 30px;
-      }
+    .logo_principal {
+      height: 40px;
+    }
 
-      .logo_principal {
-        height: 50px;
-      }
+    .grupo_A img,
+    .grupo_B img {
+      height: 25px;
     }
   }
+}
 
 .grupo_A img,
 .grupo_B img {
@@ -56,4 +51,4 @@ header {
     @include hover-scale(1.5);
     cursor: pointer;
   }
-}}
+}}}

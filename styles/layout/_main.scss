@@ -17,7 +17,10 @@
     font-family: $font-main;
     font-optical-sizing: auto;
   }
-
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   .noticias-main,
   .login-main,
   .posiciones-main {

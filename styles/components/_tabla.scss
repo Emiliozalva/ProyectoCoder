@@ -48,10 +48,17 @@
     }
   }
 
-  @media (max-width: 600px) {
-    .info, .equipo {
-      grid-template-columns: 1fr;
-      text-align: left;
-    }
+@media (max-width: $breakpoint-sm) {
+  .info, .equipo {
+    grid-template-columns: 1fr;
+    text-align: left;
+    font-size: 0.9rem;
+    padding: 10px;
   }
+
+  .equipo_escudo img {
+    width: 24px;
+    height: 24px;
+  }
+}
 }
