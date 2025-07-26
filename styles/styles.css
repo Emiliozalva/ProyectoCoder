@@ -256,6 +256,25 @@ main {
     text-align: left;
   }
 }
+/*ESTE ES EL MEDIA QUERY PARA RESOLVER EL PROBLEMA EN EL INDEX*/
+@media (max-width: 950px) {
+  .index_ {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "encabezado"
+      "noticia"
+      "login"
+      "pos";
+    row-gap: 10px; 
+  }
+
+  .index_ > div {
+    width: 100%;
+    max-width: 100%;
+    margin: 5px auto; 
+  }
+}
 
 .calendario {
   font-family: "Raleway", sans-serif;
